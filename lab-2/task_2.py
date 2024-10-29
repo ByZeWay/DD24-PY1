@@ -6,12 +6,8 @@ increase = 0.03  # Ежемесячный рост цен
 money_capital = 0
 
 for month in range(months):
-    if spend >= salary:
-        need = spend - salary
-        money_capital += need
-    else:
-        continue
-
+    need = spend - salary
+    money_capital += need
     spend = spend + spend * increase
 
 
