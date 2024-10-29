@@ -4,9 +4,9 @@ spend = 6000  # Траты за первый месяц
 increase = 0.05  # Ежемесячный рост цен
 
 months = 0
-isPositiveBudget = True
+is_positive_budget = True
 
-while isPositiveBudget:
+while is_positive_budget:
     budget = money_capital + salary
 
     if budget >= spend:
