@@ -1,7 +1,8 @@
 def find_common_participants(participants_first_group, participants_second_group, sep=','):
-    first_group = set(participants_first_group.split(sep))
-    second_group = set(participants_second_group.split(sep))
-    common_participants = sorted(first_group.intersection(second_group))
+    first_group = participants_first_group.split(sep)
+    second_group = participants_second_group.split(sep)
+    common_participants = list(set(first_group).intersection(second_group))
+    common_participants.sort()
 
     return common_participants
 
